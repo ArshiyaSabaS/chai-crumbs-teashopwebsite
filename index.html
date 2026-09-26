@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai & Crumbs · Brewed with warmth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Chai <span>&</span> Crumbs</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="menu.html?cat=tea">Tea Collection</a></li>
+        <li><a href="menu.html?cat=snacks">Snacks</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-gold" style="padding:10px 20px; font-size:0.8rem;">Visit Us</a>
+        <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-mobile" id="closeMobile"><i class="fas fa-times"></i></button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Our Menu</a>
+    <a href="menu.html?cat=tea">Tea Collection</a>
+    <a href="menu.html?cat=snacks">Snacks</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="container hero">
+      <div class="hero-content">
+        <div class="hero-badge">Brewed with warmth</div>
+        <h1>Your Perfect Tea Break.</h1>
+        <p>Freshly brewed tea, crispy snacks and comforting flavours made for conversations, cravings and little moments of joy.</p>
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-primary">Explore Our Menu <i class="fas fa-arrow-right"></i></a>
+          <a href="contact.html" class="btn btn-outline">Visit Our Shop</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?q=80&w=1200&auto=format&fit=crop" alt="Masala chai with snacks">
+        <div class="float-label"><i class="fas fa-mug-hot" style="color:var(--gold);"></i> Brewed fresh daily</div>
+      </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section class="section container reveal">
+      <div class="story-grid">
+        <div>
+          <h2 style="margin-bottom:20px;">More Than Just Tea.</h2>
+          <p style="font-size:1.05rem;">At Chai & Crumbs, every cup comes with a little warmth. From your first morning chai to your evening snack break, we create simple moments worth slowing down for.</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=800&auto=format&fit=crop" alt="Café table">
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE SERVE -->
+    <section class="section container reveal">
+      <div class="section-header"><h2>What We Serve</h2></div>
+      <div class="product-grid">
+        <a href="menu.html?cat=tea" class="product-card" style="padding:28px;">
+          <h3 style="font-size:1.4rem; margin-bottom:8px;">Signature Teas</h3>
+          <p style="font-size:0.9rem;">Masala Chai · Ginger · Cardamom · Lemon · Green · Kashmiri Kahwa</p>
+        </a>
+        <a href="menu.html?cat=coffee" class="product-card" style="padding:28px;">
+          <h3 style="font-size:1.4rem; margin-bottom:8px;">Coffee</h3>
+          <p style="font-size:0.9rem;">Filter Coffee · South Indian · Cold Coffee · Café Latte</p>
+        </a>
+        <a href="menu.html?cat=snacks" class="product-card" style="padding:28px;">
+          <h3 style="font-size:1.4rem; margin-bottom:8px;">Savoury Bites</h3>
+          <p style="font-size:0.9rem;">Samosa · Pakora · Bonda · Cutlet · Bajji · Sandwiches</p>
+        </a>
+        <a href="menu.html?cat=bakery" class="product-card" style="padding:28px;">
+          <h3 style="font-size:1.4rem; margin-bottom:8px;">Bakery & Sweets</h3>
+          <p style="font-size:0.9rem;">Puffs · Cookies · Tea Cakes · Brownies · Biscuits</p>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+      </div>
+    </section>
+
+    <!-- SIGNATURE TEA -->
+    <section class="section container reveal" style="background:rgba(232,221,208,0.2); border-radius:var(--border-radius-lg); padding:60px 24px;">
+      <div class="section-header"><h2>The Art of a Good Cup</h2></div>
+      <div class="product-grid">
+        <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?q=80&w=600&auto=format&fit=crop" alt="Masala Chai"></div><div class="product-info"><div class="product-name">Classic Masala Chai</div><div class="product-desc">Strong black tea brewed with aromatic spices.</div></div></div>
+        <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?q=80&w=600&auto=format&fit=crop" alt="Ginger Chai"></div><div class="product-info"><div class="product-name">Ginger Chai</div><div class="product-desc">Refreshing tea with a spicy ginger kick.</div></div></div>
+        <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=600&auto=format&fit=crop" alt="Cardamom Chai"></div><div class="product-info"><div class="product-name">Cardamom Chai</div><div class="product-desc">Fragrant green cardamom infused tea.</div></div></div>
+        <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?q=80&w=600&auto=format&fit=crop" alt="Kashmiri Kahwa"></div><div class="product-info"><div class="product-name">Kashmiri Kahwa</div><div class="product-desc">Saffron, almond & spice infused green tea.</div></div></div>
+      </div>
+    </section>
+
+    <!-- SNACKS -->
+    <section class="section container reveal">
+      <div class="section-header"><h2>Crispy. Fresh. Irresistible.</h2></div>
+      <div class="product-grid">
+        <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=600&auto=format&fit=crop" alt="Samosa"></div><div class="product-info"><div class="product-name">Samosa</div><div class="product-desc">Golden pastry with spiced potato and peas.</div><div class="price-row"><span class="price">₹25</span></div></div></div>
+        <div class="product-card"><div class="product-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQw8fkITv8qwUqpNGQ_QD-alWI6Moq2xGZVQE3GXESA&s=10" alt="Onion Pakora"></div><div class="product-info"><div class="product-name">Onion Pakora</div><div class="product-desc">Crispy, golden fried onion fritters.</div><div class="price-row"><span class="price">₹40</span></div></div></div>
+        <div class="product-card"><div class="product-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelDu8c1XKdAnz2ApnvJ0e4YCzCmkIVNrrol1CiEaIDA&s=10" alt="Vegetable Cutlet"></div><div class="product-info"><div class="product-name">Vegetable Cutlet</div><div class="product-desc">Mixed vegetable patties, crispy outside.</div><div class="price-row"><span class="price">₹45</span></div></div></div>
+        <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?q=80&w=600&auto=format&fit=crop" alt="Paneer Puff"></div><div class="product-info"><div class="product-name">Paneer Puff</div><div class="product-desc">Flaky puff pastry with spiced paneer.</div><div class="price-row"><span class="price">₹60</span></div></div></div>
+      </div>
+    </section>
+
+    <!-- COMBOS -->
+    <section class="section container reveal">
+      <div class="section-header"><h2>Tea-Time Favourites</h2></div>
+      <div class="combo-grid">
+        <div class="combo-card"><div class="combo-image"><img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?q=80&w=600&auto=format&fit=crop" alt="Masala Chai + Samosa"></div><div class="combo-title">Masala Chai + Samosa</div><div class="combo-items">Classic pairing for any time of day</div></div>
+        <div class="combo-card"><div class="combo-image"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Filter Coffee + Veg Puff"></div><div class="combo-title">Filter Coffee + Veg Puff</div><div class="combo-items">South Indian comfort in a combo</div></div>
+        <div class="combo-card"><div class="combo-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvV4n5-Za5nYP5IeNPCwSM5o3jvDxiG217l124NAdBaQ&s=10" alt="Ginger Tea + Pakora"></div><div class="combo-title">Ginger Tea + Pakora</div><div class="combo-items">Spicy, warm and satisfying</div></div>
+        <div class="combo-card"><div class="combo-image"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=600&auto=format&fit=crop" alt="Tea + Biscuit Platter"></div><div class="combo-title">Tea + Biscuit Platter</div><div class="combo-items">Assorted biscuits with your favourite brew</div></div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section container reveal">
+      <h2 style="margin-bottom:40px;">Why Choose Us</h2>
+      <div class="features-grid">
+        <div class="feature-item"><i class="fas fa-mug-saucer"></i><h4>Freshly Brewed</h4><p>Our tea is prepared fresh throughout the day.</p></div>
+        <div class="feature-item"><i class="fas fa-leaf"></i><h4>Quality Ingredients</h4><p>Carefully selected ingredients in every cup and bite.</p></div>
+        <div class="feature-item"><i class="fas fa-cookie-bite"></i><h4>Made Fresh</h4><p>Snacks prepared fresh for every tea-time craving.</p></div>
+        <div class="feature-item"><i class="fas fa-heart"></i><h4>Warm Hospitality</h4><p>A place where every customer feels welcome.</p></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section container reveal">
+      <div class="section-header"><h2>What Our Customers Say</h2></div>
+      <div class="testimonial-grid">
+        <div class="testimonial"><div class="stars">★★★★★</div><p>“Beautiful place for an evening chai. The samosas are always fresh.”</p><div class="name">— Ayesha</div></div>
+        <div class="testimonial"><div class="stars">★★★★★</div><p>“The perfect combination of good tea, good snacks and good conversations.”</p><div class="name">— Rahul</div></div>
+        <div class="testimonial"><div class="stars">★★★★★</div><p>“Warm hospitality and the best filter coffee in town. My daily ritual.”</p><div class="name">— Priya</div></div>
+        <div class="testimonial"><div class="stars">★★★★★</div><p>“Their masala chai reminds me of home. And the pakoras? Divine.”</p><div class="name">— Arjun</div></div>
+      </div>
+    </section>
+
+    <!-- VISIT US PREVIEW -->
+    <section class="section container reveal">
+      <div class="section-header"><h2>Come By for a Cup.</h2></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><i class="fas fa-map-pin"></i> 12, Tea Garden Lane, Bandra West, Mumbai 400050</p>
+          <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> hello@chaiandcrumbs.in</p>
+          <p><i class="fas fa-clock"></i> Monday – Sunday: 7:00 AM – 10:00 PM</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">Get Directions</a>
+        </div>
+        <div class="map-placeholder"><i class="fas fa-map" style="margin-right:8px;"></i> Google Maps placeholder</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Chai & Crumbs</h4>
+          <p style="color:#cbb9a8;">Brewed with warmth. Served with love.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Our Menu</a>
+          <a href="menu.html?cat=tea">Tea Collection</a>
+          <a href="menu.html?cat=snacks">Snacks</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>Monday – Sunday</p>
+          <p>7:00 AM – 10:00 PM</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>+91 98765 43210</p>
+          <p>hello@chaiandcrumbs.in</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Chai & Crumbs. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
